@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+nav {
+  background-color: #2b2d42;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Splits left and right sections */
+  align-items: center;
+}
+
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .nav-left img {
+  height: 40px; /* Adjust as needed */
+}
+
+nav .nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-right a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.hero {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
