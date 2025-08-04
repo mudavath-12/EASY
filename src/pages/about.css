@@ -1,0 +1,145 @@
+/* General Body and Font Styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333; /* A general gray for text */
+  background-color: #fff; /* White background for the body */
+}
+
+/* Container for the entire App component */
+.app-container {
+  background-color: #fff;
+  font-family: sans-serif;
+  color: #4a4a4a; /* Text color for the app */
+}
+
+/* Section Styling */
+.section-about {
+  background: linear-gradient(to bottom right, #fff, #e0f2f7, #e3f2fd); /* Light gradient from white to light blue */
+  padding: 64px 0; /* py-16 */
+}
+
+@media (min-width: 640px) { /* Equivalent to sm:py-24 */
+  .section-about {
+    padding: 96px 0;
+  }
+}
+
+/* Inner Container for content width and centering */
+.container {
+  margin: 0 auto; /* mx-auto */
+  padding: 0 24px; /* px-6 */
+  max-width: 1024px; /* max-w-4xl */
+  display: flex;
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+}
+
+@media (min-width: 768px) { /* Equivalent to md:flex-row, md:flex-row-reverse */
+  .container.image-left {
+    flex-direction: row;
+  }
+
+  .container.image-right {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Image Container */
+.image-container {
+  margin-bottom: 32px; /* mb-8 */
+  width: 100%; /* w-full */
+}
+
+@media (min-width: 768px) { /* Equivalent to md:mb-0 md:w-1/2 */
+  .image-container {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .container.image-left .image-container {
+    padding-right: 32px; /* md:pr-8 for the text side, so image container needs space on right */
+  }
+
+  .container.image-right .image-container {
+    padding-left: 32px; /* md:pl-8 for the text side, so image container needs space on left */
+  }
+}
+
+
+/* Image Styling */
+.feature-image {
+  border-radius: 24px; /* rounded-3xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+  width: 100%;
+  max-width: 448px; /* max-w-md */
+  margin: 0 auto; /* mx-auto */
+  object-fit: cover;
+  border: 1px solid;
+  transition: transform 0.5s ease-in-out; /* transform transition-transform duration-500 */
+}
+
+.feature-image.border-sky {
+  border-color: #bae6fd; /* border-sky-200 */
+}
+
+.feature-image.border-amber {
+  border-color: #fde68a; /* border-amber-200 */
+}
+
+.feature-image:hover {
+  transform: scale(1.01); /* hover:scale-[1.01] */
+}
+
+/* Text Container */
+.text-container {
+  width: 100%; /* w-full */
+}
+
+@media (min-width: 768px) { /* Equivalent to md:w-1/2 */
+  .text-container {
+    width: 50%;
+  }
+
+  .container.image-left .text-container {
+    padding-left: 32px; /* md:pl-8 */
+  }
+
+  .container.image-right .text-container {
+    padding-right: 32px; /* md:pr-8 */
+  }
+}
+
+/* Heading Styling */
+.section-heading {
+  font-size: 36px; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+  letter-spacing: -0.025em; /* tracking-tight */
+  color: #1a202c; /* text-gray-900 */
+  margin-bottom: 24px; /* mb-6 */
+}
+
+@media (min-width: 768px) { /* Equivalent to md:text-5xl */
+  .section-heading {
+    font-size: 48px;
+  }
+}
+
+.heading-sky-highlight {
+  color: #0284c7; /* text-sky-600 */
+}
+
+.heading-amber-highlight {
+  color: #d97706; /* text-amber-600 */
+}
+
+/* Paragraph Text Styling */
+.section-paragraph {
+  font-size: 18px; /* text-lg */
+  color: #4a4a4a; /* text-gray-700 */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+.section-paragraph strong {
+  font-weight: bold;
+}
