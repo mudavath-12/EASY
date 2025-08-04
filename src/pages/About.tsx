@@ -33,11 +33,11 @@ const About = () => {
             {/* Replaced Tailwind classes with custom CSS class "section-heading" */}
             <h2 className="section-heading">
               About {/* Replaced Tailwind class with custom CSS class "heading-sky-highlight" */}
-              <span className="heading-sky-highlight">Easy Ride Planner</span>
+              <span className="heading-sky-highlight">Easy Route Planner</span>
             </h2>
             {/* Replaced Tailwind classes with custom CSS class "section-paragraph" */}
             <p className="section-paragraph">
-              <strong>Easy Ride Planner</strong> is your intelligent travel companion, designed to simplify trip planning, scheduling, and real-time tracking. Whether you're commuting, managing a fleet, or planning a getaway, our platform offers reliable, efficient, and intuitive tools to support every journey.
+              <strong>Easy Route Planner</strong> is your intelligent travel companion, designed to simplify trip planning, scheduling, and real-time tracking. Whether you're commuting, managing a fleet, or planning a getaway, our platform offers reliable, efficient, and intuitive tools to support every journey.
             </p>
           </div>
         </div>
