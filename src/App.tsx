@@ -18,7 +18,7 @@ import Contact from './pages/Contact.tsx';
 function PlannerRedirect() {
   useEffect(() => {
     // Redirect to your other app after user is authenticated
-    window.location.href = 'http://localhost:5173/';
+    window.location.href = 'https://easy-ride-planner-qwwr.onrender.com/';
   }, []);
 
   return <p>Redirecting to EasyRidePlanner5-main...</p>;
